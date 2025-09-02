@@ -5,8 +5,8 @@ $(document).ready(function () { // $(document).ready() --> $(func)
     // element selector && onClickEventListener
     $("p").click(function () {
         console.log("p clicked ", this)
-        // $("p").hide(); // hides all p element
-        // $(this).hide(); // hides the current p element
+        $("p").hide(); // hides all p element
+        $(this).hide(); // hides the current p element
     });
     // $("#id").hide();
     // $(".class").hide();
@@ -85,17 +85,17 @@ $("#content").val("type anything...");
 // $("#wiki").css("background-color", "red") set value
 // $("#wiki").css("background-color") //get value
 $.get("https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js", function (data, status) {
-    alert(data)
+    // alert(data)
 })
 
 // ajax in jquery
 
 $.get("https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js", function (data, status) {
-    alert(status)
+    // alert(status)
 })
 
 $.post("https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js", function (data, status) {
-    alert(status)
+    // alert(status)
 })
 
 /*
